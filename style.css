@@ -1,0 +1,19 @@
+.MainBox{
+    display: grid;
+    grid-template-columns: repeat(3,8vw);
+    grid-template-rows: repeat(3,8vw);
+}
+.line{
+    transition:height 1se ease-in-out;
+    -webkit-transition:height 1se ease-in-out;
+    -moz-transition:height 1se ease-in-out;
+    -ms-transition:height 1se ease-in-out;
+    -o-transition:height 1se ease-in-out;
+}
+
+@media (width:600px) {
+    .MainBox{
+        grid-template-columns: repeat(3,12vw);
+        grid-template-rows: repeat(3,12vw);
+    }       
+}

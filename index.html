@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tic Tac Toe</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script> -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="w-screen h-screen bg-teal-200">
+      <nav
+        class="h-[40px] w-full flex items-center justify-between  bg-zinc-700 p-2 text-white font-bold"
+      >
+       <h1>
+           Tic-Tac-Toe
+       </h1> 
+       <button class="btnRest px-3 hover:bg-blue-700 py-1 bg-blue-500 rounded-md">
+        Restart
+      </button>
+      </nav>
+      <section
+        class="h-[calc(100%-40px)] w-full flex items-center justify-center flex-col"
+      >
+      <div
+      class="flex items-center  my-5 gap-5 justify-start h-screen flex-col   w-full"
+      >
+      <h1 class="md:text-[2.8vw] text-[4vw] font-bold">Welcome to Tic Tac Toe Game</h1>
+          
+          <div class="MainBox border-2 relative border-black bg-white ">
+            <div class="line absolute w-[2px] bg-teal-500  ">
+            </div>
+            <div
+              class="box cursor-pointer hover:bg-zinc-200 border flex items-center justify-center border-black"
+            >
+              <span class="textbox text-[5vw]"> </span>
+            </div>
+            <div
+              class="box cursor-pointer hover:bg-zinc-200 border flex items-center justify-center border-black"
+            >
+              <span class="textbox text-[5vw]"> </span>
+            </div>
+            <div
+              class="box cursor-pointer hover:bg-zinc-200 border flex items-center justify-center border-black"
+            >
+              <span class="textbox text-[5vw]"> </span>
+            </div>
+            <div
+              class="box cursor-pointer hover:bg-zinc-200 border flex items-center justify-center border-black"
+            >
+              <span class="textbox text-[5vw]"> </span>
+            </div>
+            <div
+              class="box cursor-pointer hover:bg-zinc-200 border flex items-center justify-center border-black"
+            >
+              <span class="textbox text-[5vw]"> </span>
+            </div>
+            <div
+              class="box cursor-pointer hover:bg-zinc-200 border flex items-center justify-center border-black"
+            >
+              <span class="textbox text-[5vw]"> </span>
+            </div>
+            <div
+              class="box cursor-pointer hover:bg-zinc-200 border flex items-center justify-center border-black"
+            >
+              <span class="textbox text-[5vw]"> </span>
+            </div>
+            <div
+              class="box cursor-pointer hover:bg-zinc-200 border flex items-center justify-center border-black"
+            >
+              <span class="textbox text-[5vw]"> </span>
+            </div>
+            <div
+              class="box cursor-pointer hover:bg-zinc-200 border flex items-center justify-center border-black"
+            >
+              <span class="textbox text-[5vw]"> </span>
+            </div>
+          </div>
+          <div class="gameInfo  flex items-center flex-col">
+              <div class="flex flex-col gap-2 items-center">
+                <span class="turn text-[2vw] font-semibold ">Turn for  X  </span>
+              </div>
+            <div class="imgBox hidden  ">
+              <img src="./tic_tac_toe/excited.gif" class="size-[10vw]" alt="git" />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+  <script src="script.js"></script>
+</html>
